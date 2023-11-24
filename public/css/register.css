@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;  
+    background-color: #ebebeb;
+}
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo{
+    width: 45%;
+}
+.barra{
+    width: 55%;
+}
+.texto-cuotas{
+    text-align: center;
+    max-width: 350px;
+    font-size: 18px;
+    font-weight: 700;
+}
+nav{
+    display: none;
+    font-weight: 600;
+}
+.burger-menu{
+    max-width: 45px;
+    font-size: 23px;
+    background-color: #03264C;
+    color: #ebebeb;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+section{
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titulo{
+    font-size: 30px;
+}
+.form label{
+    display: block;
+}
+.select label{
+    display: block;
+}
+.dato{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form{
+    margin-top: 15px;
+}
+.select{
+    margin-top: 15px;
+}
+.form input{
+    width: 90%;
+    height: 25px;
+}
+.opciones{
+    font-weight: 100;
+    font-size: 14px;
+    margin: 5px;
+}
+.botones{
+    margin: 10px;
+}
+footer{
+    text-align: center;
+}
+.iconos{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+form button{
+    color: #ebebeb;
+    background-color: #03264C;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+}
+@media(min-width:768px){
+    .logo{
+        width: 180px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .top-bar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .barra{
+        width: 200px;
+    }
+    .texto-cuotas{
+        font-size: 20px;
+        max-width: 280px;
+        text-align: right;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    nav a{
+        text-decoration: none;
+        color: #222222;
+        display: inline-block;
+        font-size: 17px;
+        padding: 5px 0;
+    }
+    nav li{
+        margin: 0 5px;
+    }
+}
+
+@media(min-width:1200px){
+    nav, .top-bar{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .logo{
+        width: 250px;
+    }
+    .barra{
+        width: 320px;
+    }
+    .texto-cuotas{
+        font-size: 22px;
+        max-width: none;
+    }
+    .top-bar{
+        align-items: center;
+    }
+    .flexfooter{
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 1600px;
+        margin: auto;
+    }
+    .cajafooter{
+        width: 30%;
+    }
+    .iconos:hover{
+        color: #1259c3;;
+    }
+}
